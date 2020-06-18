@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webpage Design - Rajnish</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="image/logo.png">
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="#">ARTIST</a></li>
+				<li><a href="#">EXHIBITION</a></li>
+				<li><a href="#">EVENTS</a></li>
+				<li><a href="#">VISIT US</a></li>
+			</ul>
+			<p class="lite-text">MENU</p>
+			<img src="cross.png" class="close-icon" onclick="closemenu()">
+		</nav>
+		<img src="menu.png" class="menu-icon" onclick="openmenu()">
+	</div>
+	
+    <div class="content-row">
+    	<div class="left-col">
+    		<div class="search">
+    			<img src="image/search.png">
+    			<input type="text">
+    		</div>
+
+            <hr>
+            <h1>Every artist writes his/her own autobiography</h1>
+            <p>Buddhism pursues happiness by using knowledge and practice to achieve mental equanimity. In Buddhism, equanimity, or peace of mind, is achieved by detaching oneself from the cycle of craving that produces dukkha.</p>
+
+            <div class="indicator">
+            	<span class="active"></span>
+            	<span></span>
+            	<span></span>
+            	<span></span>
+            </div>
+
+    	</div>
+    	<div class="right-col">
+    		<img src="image/budh2.jpg">
+    	</div>
+    </div>
+
+    <div class="social-links">
+    	<a href="#"><img src="image/facebook.png"></a>
+    	<a href="#"><img src="image/twitter.png"></a>
+    	<a href="#"><img src="image/instagram.png"></a>
+    </div>
+
+</div>
+<script>
+	var menu = document.getElementById("menu");
+	function closemenu()
+	{
+		menu.style.top = "-100vh";
+	}
+   
+    function openmenu()
+	{
+		menu.style.top = "0";
+	}
+</script>
+</body>
+</html>
